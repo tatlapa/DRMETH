@@ -1,0 +1,629 @@
+/*Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+
+}
+.container {
+    height: 100%;
+    display:flex;
+    gap: 2rem;
+}
+
+.container .sidebar {
+    background-color: red;
+    width: 40%;
+    padding: 20px 10px;
+}
+
+.container .content {
+    background-color: green;
+    width: 60%;
+}
+
+.container .sidebar .controller {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container .sidebar .controller .circle {
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    border:3px solid black;
+    cursor: pointer;
+}
+
+.container .sidebar .controller .circle:active {
+    transform: scale(.8);
+}
+
+.container .sidebar .controller .rectangle1 {
+    display: flex;
+}
+
+.container .sidebar .controller .rectangle2 {
+    display: flex;
+}
+
+.container .sidebar .controller .rectangle3 {
+    display: flex;
+}
+
+.container .sidebar .controller .rectangle1 .circle.meth {
+    background-color: yellow;
+}
+
+
+.container .sidebar .controller .rectangle2 .circle.money {
+    background-color: green;
+}
+
+.container .sidebar .controller .rectangle3 .circle.purity { 
+    background-color: white;
+    height: 100px;
+    width: 100px;  
+    margin-left: 10px;
+    cursor: inherit;
+}
+
+.container .sidebar .controller .circle.purity:active {
+    transform: scale(1);
+}
+
+#info1 {
+    font-size : 30px;
+    color: white;
+}
+
+#info2 {
+    font-size : 30px;
+    color: white;
+}
+
+#info3 {
+    font-size : 30px;
+    color: white;
+}
+
+.selector {
+    position: absolute;
+    z-index: 2;
+    height: 3%;
+    background-color: transparent;
+}
+
+.selector #col1 {
+    display: inline-block;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.selector #col2 {
+    display: inline-block;
+    padding: 6px 24px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.selector #col3 {
+    display: inline-block;
+    padding: 6px 24px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.selector #col4 {
+    display: inline-block;
+    padding: 6px 24px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.selector #line1 {
+    width: 69px;
+    display: inline-block;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line1:active {
+    transform: scale(.8);
+}
+.selector #line2 {
+    width: 69px;
+    display: inline-block;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line2:active {
+    transform: scale(.8);
+}
+.selector #line3 {
+    width: 69px;
+    display: inline-block;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line3:active {
+    transform: scale(.8);
+}
+.selector #line4 {
+    width: 69px;
+    display: inline-block;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line4:active {
+    transform: scale(.8);
+}
+.selector #line5 {
+    width: 69px;
+    display: inline-block;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line5:active {
+    transform: scale(.8);
+}
+.selector #line6 {
+    width: 69px;
+    display: inline-block;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line6:active {
+    transform: scale(.8);
+}
+.selector #line7 {
+    width: 69px;
+    display: inline-block;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line7:active {
+    transform: scale(.8);
+}
+.selector #line8 {
+    width: 69px;
+    display: inline-block;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line8:active {
+    transform: scale(.8);
+}
+.selector #line9 {
+    width: 69px;
+    display: inline-block;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line9:active {
+    transform: scale(.8);
+}
+.selector #line10 {
+    width: 69px;
+    display: inline-block;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line10:active {
+    transform: scale(.8);
+}
+.selector #line11 {
+    width: 69px;
+    display: inline-block;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line11:active {
+    transform: scale(.8);
+}
+.selector #line12 {
+    width: 69px;
+    display: inline-block;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line12:active {
+    transform: scale(.8);
+}
+
+.selector #line01 {
+    width: 69px;
+    display: none;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line01:active {
+    transform: scale(.8);
+}
+.selector #line02 {
+    width: 69px;
+    display: none;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line02:active {
+    transform: scale(.8);
+}
+.selector #line03 {
+    width: 69px;
+    display: none;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line03:active {
+    transform: scale(.8);
+}
+.selector #line04 {
+    width: 69px;
+    display: none;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line04:active {
+    transform: scale(.8);
+}
+.selector #line05 {
+    width: 69px;
+    display: none;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line05:active {
+    transform: scale(.8);
+}
+
+.selector #line001 {
+    width: 69px;
+    display: none;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line001:active {
+    transform: scale(.8);
+}
+.selector #line002 {
+    width: 69px;
+    display: none;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line002:active {
+    transform: scale(.8);
+}
+.selector #line003 {
+    width: 69px;
+    display: none;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line003:active {
+    transform: scale(.8);
+}
+.selector #line004 {
+    width: 69px;
+    display: none;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line004:active {
+    transform: scale(.8);
+}
+.selector #line005 {
+    width: 69px;
+    display: none;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line005:active {
+    transform: scale(.8);
+}
+.selector #line006 {
+    width: 69px;
+    display: none;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line006:active {
+    transform: scale(.8);
+}
+.selector #line007 {
+    width: 69px;
+    display: none;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line007:active {
+    transform: scale(.8);
+}
+.selector #line008 {
+    width: 69px;
+    display: none;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line008:active {
+    transform: scale(.8);
+}
+.selector #line009 {
+    width: 69px;
+    display: none;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line009:active {
+    transform: scale(.8);
+}
+.selector #line0010 {
+    width: 69px;
+    display: none;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line0010:active {
+    transform: scale(.8);
+}
+.selector #line0011 {
+    width: 69px;
+    display: none;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line0011:active {
+    transform: scale(.8);
+}
+.selector #line0012 {
+    width: 69px;
+    display: none;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line0012:active {
+    transform: scale(.8);
+}
+
+.selector #line0001 {
+    width: 69px;
+    display: none;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selector #line0001:active {
+    transform: scale(.8);
+}
