@@ -34,12 +34,53 @@
     border-top: none;
 }
 
-body{
-    height: 100vh;
+body  {
+    height: 100%;
     width: 100%;
     margin: 0;
 
 }
+
+.meth {
+    display:flex;
+    flex-direction: column;
+}
+
+.money{
+    display:flex;
+    flex-direction: column;
+}
+
+
+#info1 {
+    margin: 0;
+    font-size : 30px;
+    color: white;
+}
+#info01 {
+    margin: 0;
+    font-size : 15px;
+    color: white;
+}
+
+#info2 {
+    margin: 0;
+    font-size : 30px;
+    color: white;
+}
+
+#info02 {
+    margin: 0;
+    font-size : 15px;
+    color: white;
+}
+
+
+#info3 {
+    font-size : 30px;
+    color: white;
+}
+
 .container {
     height: 100%;
     display:flex;
@@ -55,12 +96,15 @@ body{
 .container .content {
     background-color: green;
     width: 60%;
+    padding: 20px 10px;
 }
 
 .container .sidebar .controller {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    height: 51%;
+    
 }
 
 .container .sidebar .controller .circle {
@@ -77,10 +121,12 @@ body{
 
 .container .sidebar .controller .rectangle1 {
     display: flex;
+    align-items: center;
 }
 
 .container .sidebar .controller .rectangle2 {
     display: flex;
+    align-items: center;
 }
 
 .container .sidebar .controller .rectangle3 {
@@ -108,41 +154,42 @@ body{
     transform: scale(1);
 }
 
-#info1 {
-    font-size : 30px;
-    color: white;
-}
-
-#info2 {
-    font-size : 30px;
-    color: white;
-}
-
-#info3 {
-    font-size : 30px;
-    color: white;
-}
-
-.selector {
-    position: absolute;
-    z-index: 2;
-    height: 3%;
+.container .sidebar .selector {
+    display: flex;
+    flex-direction: column;
     background-color: transparent;
 }
 
-.selector #col1 {
-    display: inline-block;
+.container .sidebar .selector .table {
+display: flex;
+flex-direction: column;
+}
+
+.container .sidebar .selector .table .thead {
+    display: flex;
+    flex-direction:column;
+}
+
+.container .sidebar .selector .table .thead .tr {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+.container .sidebar .selector .table .thead .tr #col1 {
     padding: 6px 24px;
-    background-color: blue;
     color: white;
     border: none;
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
+    width: 18%;
+    background-color: blue;
 }
 
-.selector #col2 {
-    display: inline-block;
+.container .sidebar .selector .table .thead .tr #col2,
+.container .sidebar .selector .table .thead .tr #col3,
+.container .sidebar .selector .table .thead .tr #col4 {
     padding: 6px 24px;
     background-color: grey;
     color: white;
@@ -150,480 +197,228 @@ body{
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
+    width: 18%;
 }
 
-.selector #col3 {
+.container .sidebar .selector .table .thead .tr #col1:active,
+.container .sidebar .selector .table .thead .tr #col2:active,
+.container .sidebar .selector .table .thead .tr #col3:active,
+.container .sidebar .selector .table .thead .tr #col4:active {
+    transform: scale(.8);
+}
+
+.container .sidebar .selector .table .tbody {
+    display: flex;
+    flex-direction:column;
+}
+
+.container .sidebar .selector .table .tbody .tr1,
+.container .sidebar .selector .table .tbody .tr2,
+.container .sidebar .selector .table .tbody .tr3,
+.container .sidebar .selector .table .tbody .tr4,
+.container .sidebar .selector .table .tbody .tr5,  
+.container .sidebar .selector .table .tbody .tr6,  
+.container .sidebar .selector .table .tbody .tr7,  
+.container .sidebar .selector .table .tbody .tr8, 
+.container .sidebar .selector .table .tbody .tr9,  
+.container .sidebar .selector .table .tbody .tr10, 
+.container .sidebar .selector .table .tbody .tr11,
+.container .sidebar .selector .table .tbody .tr12,
+.container .sidebar .selector .table .tbody .tr01,
+.container .sidebar .selector .table .tbody .tr02,
+.container .sidebar .selector .table .tbody .tr03,
+.container .sidebar .selector .table .tbody .tr04,
+.container .sidebar .selector .table .tbody .tr05,
+.container .sidebar .selector .table .tbody .tr001,
+.container .sidebar .selector .table .tbody .tr002,
+.container .sidebar .selector .table .tbody .tr003,
+.container .sidebar .selector .table .tbody .tr004,
+.container .sidebar .selector .table .tbody .tr005,
+.container .sidebar .selector .table .tbody .tr006,
+.container .sidebar .selector .table .tbody .tr007,
+.container .sidebar .selector .table .tbody .tr008,
+.container .sidebar .selector .table .tbody .tr009,
+.container .sidebar .selector .table .tbody .tr0010,
+.container .sidebar .selector .table .tbody .tr0011,
+.container .sidebar .selector .table .tbody .tr0012,
+.container .sidebar .selector .table .tbody .tr0001 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container .sidebar .selector .table .tbody .tr1 #trailer,
+.container .sidebar .selector .table .tbody .tr2 #line2,
+.container .sidebar .selector .table .tbody .tr3 #line3,
+.container .sidebar .selector .table .tbody .tr4 #line4,
+.container .sidebar .selector .table .tbody .tr5 #line5,  
+.container .sidebar .selector .table .tbody .tr6 #line6,  
+.container .sidebar .selector .table .tbody .tr7 #line7,  
+.container .sidebar .selector .table .tbody .tr8 #line8, 
+.container .sidebar .selector .table .tbody .tr9 #line9,  
+.container .sidebar .selector .table .tbody .tr10 #line10, 
+.container .sidebar .selector .table .tbody .tr11 #line11,
+.container .sidebar .selector .table .tbody .tr12 #line12,
+.container .sidebar .selector .table .tbody .tr01 #line01,
+.container .sidebar .selector .table .tbody .tr02 #line02,
+.container .sidebar .selector .table .tbody .tr03 #line03,
+.container .sidebar .selector .table .tbody .tr04 #line04,
+.container .sidebar .selector .table .tbody .tr05 #line05,
+.container .sidebar .selector .table .tbody .tr001 #line001,
+.container .sidebar .selector .table .tbody .tr002 #line002,
+.container .sidebar .selector .table .tbody .tr003 #line003,
+.container .sidebar .selector .table .tbody .tr004 #line004,
+.container .sidebar .selector .table .tbody .tr005 #line005,
+.container .sidebar .selector .table .tbody .tr006 #line006,
+.container .sidebar .selector .table .tbody .tr007 #line007,
+.container .sidebar .selector .table .tbody .tr008 #line008,
+.container .sidebar .selector .table .tbody .tr009 #line009,
+.container .sidebar .selector .table .tbody .tr0010 #line010,
+.container .sidebar .selector .table .tbody .tr0011 #line011,
+.container .sidebar .selector .table .tbody .tr0012 #line012,
+.container .sidebar .selector .table .tbody .tr0001 #line0001 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 18%;
+}
+
+.container .sidebar .selector .table .tbody .tr1 #trailer:active, 
+.container .sidebar .selector .table .tbody .tr2 #line2:active,
+.container .sidebar .selector .table .tbody .tr3 #line3:active,
+.container .sidebar .selector .table .tbody .tr4 #line4:active,
+.container .sidebar .selector .table .tbody .tr5 #line5:active,
+.container .sidebar .selector .table .tbody .tr6 #line6:active,
+.container .sidebar .selector .table .tbody .tr7 #line7:active,
+.container .sidebar .selector .table .tbody .tr8 #line8:active,
+.container .sidebar .selector .table .tbody .tr9 #line9:active,
+.container .sidebar .selector .table .tbody .tr10 #line10:active,
+.container .sidebar .selector .table .tbody .tr11 #line11:active,
+.container .sidebar .selector .table .tbody .tr12 #line12:active,
+.container .sidebar .selector .table .tbody .tr01 #line01:active,
+.container .sidebar .selector .table .tbody .tr02 #line02:active,
+.container .sidebar .selector .table .tbody .tr03 #line03:active,
+.container .sidebar .selector .table .tbody .tr04 #line04:active,
+.container .sidebar .selector .table .tbody .tr05 #line05:active,
+.container .sidebar .selector .table .tbody .tr001 #line001:active,
+.container .sidebar .selector .table .tbody .tr002 #line002:active,
+.container .sidebar .selector .table .tbody .tr003 #line003:active,
+.container .sidebar .selector .table .tbody .tr004 #line004:active,
+.container .sidebar .selector .table .tbody .tr005 #line005:active,
+.container .sidebar .selector .table .tbody .tr006 #line006:active,
+.container .sidebar .selector .table .tbody .tr007 #line007:active,
+.container .sidebar .selector .table .tbody .tr008 #line008:active,
+.container .sidebar .selector .table .tbody .tr009 #line009:active,
+.container .sidebar .selector .table .tbody .tr0010 #line010:active,
+.container .sidebar .selector .table .tbody .tr0011 #line011:active,
+.container .sidebar .selector .table .tbody .tr0012 #line012:active,
+.container .sidebar .selector .table .tbody .tr0001 #line0001:active {
+    transform: scale(.8);
+}
+
+.container .sidebar .selector .table .tbody .tr1 #content1, 
+.container .sidebar .selector .table .tbody .tr2 #content2,
+.container .sidebar .selector .table .tbody .tr3 #content3,
+.container .sidebar .selector .table .tbody .tr4 #content4,
+.container .sidebar .selector .table .tbody .tr5 #content5,
+.container .sidebar .selector .table .tbody .tr6 #content6,
+.container .sidebar .selector .table .tbody .tr7 #content7,
+.container .sidebar .selector .table .tbody .tr8 #content8,
+.container .sidebar .selector .table .tbody .tr9 #content9,
+.container .sidebar .selector .table .tbody .tr10 #content10,
+.container .sidebar .selector .table .tbody .tr11 #content11,
+.container .sidebar .selector .table .tbody .tr12 #content12,
+.container .sidebar .selector .table .tbody .tr01 #content01,
+.container .sidebar .selector .table .tbody .tr02 #content02,
+.container .sidebar .selector .table .tbody .tr03 #content03,
+.container .sidebar .selector .table .tbody .tr04 #content04,
+.container .sidebar .selector .table .tbody .tr05 #content05,
+.container .sidebar .selector .table .tbody .tr001 #content001,
+.container .sidebar .selector .table .tbody .tr002 #content002,
+.container .sidebar .selector .table .tbody .tr003 #content003,
+.container .sidebar .selector .table .tbody .tr004 #content004,
+.container .sidebar .selector .table .tbody .tr005 #content005,
+.container .sidebar .selector .table .tbody .tr006 #content006,
+.container .sidebar .selector .table .tbody .tr007 #content007,
+.container .sidebar .selector .table .tbody .tr008 #content008,
+.container .sidebar .selector .table .tbody .tr009 #content009,
+.container .sidebar .selector .table .tbody .tr0010 #content0010,
+.container .sidebar .selector .table .tbody .tr0011 #content0011,
+.container .sidebar .selector .table .tbody .tr0012 #content0012,
+.container .sidebar .selector .table .tbody .tr0001 #content0001 {
+    padding: 6px 24px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    width: 67%;
+}
+
+
+
+.container .content .controller1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height : 100%;
+}
+
+.container .content .controller1 .rectangle01,
+.container .content .controller1 .rectangle02,
+.container .content .controller1 .rectangle03,
+.container .content .controller1 .rectangle04,
+.container .content .controller1 .rectangle05 {
     display: inline-block;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    height : 20%;
+}
+
+
+.container .content .controller1 .rectangle01 .buttondealer {
+    margin-top: auto;
     padding: 6px 24px;
     background-color: grey;
     color: white;
     border: none;
     border-radius: 4px;
     font-size: 16px;
-    cursor: pointer;
+  }
+
+  .container .content .controller1 .rectangle01 .buttondealer:active {
+    transform: scale(.8);
 }
 
-.selector #col4 {
-    display: inline-block;
+  .container .content .controller1 .rectangle01 #dealer {
+    color: white;
+  }
+
+  .container .content .controller1 .rectangle02 .buttonchemist1 {
+    margin-top: auto;
     padding: 6px 24px;
     background-color: grey;
     color: white;
     border: none;
     border-radius: 4px;
     font-size: 16px;
-    cursor: pointer;
-}
+  }
 
-.selector #line1 {
-    width: 69px;
-    display: inline-block;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line1:active {
-    transform: scale(.8);
-}
-.selector #line2 {
-    width: 69px;
-    display: inline-block;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line2:active {
-    transform: scale(.8);
-}
-.selector #line3 {
-    width: 69px;
-    display: inline-block;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line3:active {
-    transform: scale(.8);
-}
-.selector #line4 {
-    width: 69px;
-    display: inline-block;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line4:active {
-    transform: scale(.8);
-}
-.selector #line5 {
-    width: 69px;
-    display: inline-block;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line5:active {
-    transform: scale(.8);
-}
-.selector #line6 {
-    width: 69px;
-    display: inline-block;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line6:active {
-    transform: scale(.8);
-}
-.selector #line7 {
-    width: 69px;
-    display: inline-block;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line7:active {
-    transform: scale(.8);
-}
-.selector #line8 {
-    width: 69px;
-    display: inline-block;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line8:active {
-    transform: scale(.8);
-}
-.selector #line9 {
-    width: 69px;
-    display: inline-block;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line9:active {
-    transform: scale(.8);
-}
-.selector #line10 {
-    width: 69px;
-    display: inline-block;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line10:active {
-    transform: scale(.8);
-}
-.selector #line11 {
-    width: 69px;
-    display: inline-block;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line11:active {
-    transform: scale(.8);
-}
-.selector #line12 {
-    width: 69px;
-    display: inline-block;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line12:active {
+  .container .content .controller1 .rectangle02 .buttonchemist1:active {
     transform: scale(.8);
 }
 
-.selector #line01 {
-    width: 69px;
-    display: none;
-    padding: 6px 24px;
-    background-color: blue;
+  .container .content .controller1 .rectangle02 #chemist1 {
     color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line01:active {
-    transform: scale(.8);
-}
-.selector #line02 {
-    width: 69px;
-    display: none;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line02:active {
-    transform: scale(.8);
-}
-.selector #line03 {
-    width: 69px;
-    display: none;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line03:active {
-    transform: scale(.8);
-}
-.selector #line04 {
-    width: 69px;
-    display: none;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line04:active {
-    transform: scale(.8);
-}
-.selector #line05 {
-    width: 69px;
-    display: none;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line05:active {
-    transform: scale(.8);
-}
-
-.selector #line001 {
-    width: 69px;
-    display: none;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line001:active {
-    transform: scale(.8);
-}
-.selector #line002 {
-    width: 69px;
-    display: none;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line002:active {
-    transform: scale(.8);
-}
-.selector #line003 {
-    width: 69px;
-    display: none;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line003:active {
-    transform: scale(.8);
-}
-.selector #line004 {
-    width: 69px;
-    display: none;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line004:active {
-    transform: scale(.8);
-}
-.selector #line005 {
-    width: 69px;
-    display: none;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line005:active {
-    transform: scale(.8);
-}
-.selector #line006 {
-    width: 69px;
-    display: none;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line006:active {
-    transform: scale(.8);
-}
-.selector #line007 {
-    width: 69px;
-    display: none;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line007:active {
-    transform: scale(.8);
-}
-.selector #line008 {
-    width: 69px;
-    display: none;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line008:active {
-    transform: scale(.8);
-}
-.selector #line009 {
-    width: 69px;
-    display: none;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line009:active {
-    transform: scale(.8);
-}
-.selector #line0010 {
-    width: 69px;
-    display: none;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line0010:active {
-    transform: scale(.8);
-}
-.selector #line0011 {
-    width: 69px;
-    display: none;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line0011:active {
-    transform: scale(.8);
-}
-.selector #line0012 {
-    width: 69px;
-    display: none;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line0012:active {
-    transform: scale(.8);
-}
-
-.selector #line0001 {
-    width: 69px;
-    display: none;
-    padding: 6px 24px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.selector #line0001:active {
-    transform: scale(.8);
-}
+  }
