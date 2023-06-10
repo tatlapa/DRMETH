@@ -174,8 +174,10 @@ function filtrerElements(event) {
   // Afficher les éléments correspondant au bouton cliqué
   const btnId = event.target.id;
   if (btnId === "col1") {
+    console.log("fedp");
     const trElements = document.querySelectorAll(
-      ".container .sidebar .selector .table .tbody .tr1, " +
+      ".container .sidebar .selector .table .tbody, " +
+        ".container .sidebar .selector .table .tbody .tr1, " +
         ".container .sidebar .selector .table .tbody .tr2, " +
         ".container .sidebar .selector .table .tbody .tr3," +
         ".container .sidebar .selector .table .tbody .tr4, " +
@@ -190,14 +192,14 @@ function filtrerElements(event) {
     );
     for (let j = 0; j < trElements.length; j++) {
       trElements[j].style.display = "flex";
-      console.log(trElements);
     }
   } else if (btnId === "col2") {
     const trElements = document.querySelectorAll(
-      ".container .sidebar .selector .table .tbody .tr01 " +
-        ".container .sidebar .selector .table .tbody .tr02 " +
-        ".container .sidebar .selector .table .tbody .tr03 " +
-        ".container .sidebar .selector .table .tbody .tr04 " +
+      ".container .sidebar .selector .table .tbody, " +
+        ".container .sidebar .selector .table .tbody .tr01, " +
+        ".container .sidebar .selector .table .tbody .tr02, " +
+        ".container .sidebar .selector .table .tbody .tr03, " +
+        ".container .sidebar .selector .table .tbody .tr04, " +
         ".container .sidebar .selector .table .tbody .tr05"
     );
     for (let j = 0; j < trElements.length; j++) {
@@ -205,17 +207,18 @@ function filtrerElements(event) {
     }
   } else if (btnId === "col3") {
     const trElements = document.querySelectorAll(
-      ".container .sidebar .selector .table .tbody .tr001 " +
-        ".container .sidebar .selector .table .tbody .tr002 " +
-        ".container .sidebar .selector .table .tbody .tr003 " +
-        ".container .sidebar .selector .table .tbody .tr004 " +
-        ".container .sidebar .selector .table .tbody .tr005 " +
-        ".container .sidebar .selector .table .tbody .tr006 " +
-        ".container .sidebar .selector .table .tbody .tr007 " +
-        ".container .sidebar .selector .table .tbody .tr008 " +
-        ".container .sidebar .selector .table .tbody .tr009" +
-        ".container .sidebar .selector .table .tbody .tr0010 " +
-        ".container .sidebar .selector .table .tbody .tr0011 " +
+      ".container .sidebar .selector .table .tbody, " +
+        ".container .sidebar .selector .table .tbody .tr001, " +
+        ".container .sidebar .selector .table .tbody .tr002, " +
+        ".container .sidebar .selector .table .tbody .tr003, " +
+        ".container .sidebar .selector .table .tbody .tr004, " +
+        ".container .sidebar .selector .table .tbody .tr005, " +
+        ".container .sidebar .selector .table .tbody .tr006, " +
+        ".container .sidebar .selector .table .tbody .tr007, " +
+        ".container .sidebar .selector .table .tbody .tr008, " +
+        ".container .sidebar .selector .table .tbody .tr009, " +
+        ".container .sidebar .selector .table .tbody .tr0010, " +
+        ".container .sidebar .selector .table .tbody .tr0011, " +
         ".container .sidebar .selector .table .tbody .tr0012"
     );
     for (let j = 0; j < trElements.length; j++) {
@@ -223,7 +226,8 @@ function filtrerElements(event) {
     }
   } else if (btnId === "col4") {
     const trElements = document.querySelectorAll(
-      ".container .sidebar .selector .table .tbody .tr0001"
+      ".container .sidebar .selector .table .tbody, " +
+        ".container .sidebar .selector .table .tbody .tr0001"
     );
     for (let j = 0; j < trElements.length; j++) {
       trElements[j].style.display = "flex";
@@ -237,9 +241,16 @@ window.addEventListener("DOMContentLoaded", function () {
   filtrerElements(loadCol1);
 });
 
+const btnCol1 = document.getElementById("col1");
+const btnCol2 = document.getElementById("col2");
+const btnCol3 = document.getElementById("col3");
+const btnCol4 = document.getElementById("col4");
 // Ajout d'un écouteur d'événement sur chaque bouton pour appeler la fonction filtrerElements
 
-window.addEventListener("click", filtrerElements);
+btnCol1.addEventListener("click", filtrerElements);
+btnCol2.addEventListener("click", filtrerElements);
+btnCol3.addEventListener("click", filtrerElements);
+btnCol4.addEventListener("click", filtrerElements);
 
 /*
 
