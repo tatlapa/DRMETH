@@ -273,9 +273,9 @@ flex-direction: column;
 .container .sidebar .selector .table .tbody .tr007 #line007,
 .container .sidebar .selector .table .tbody .tr008 #line008,
 .container .sidebar .selector .table .tbody .tr009 #line009,
-.container .sidebar .selector .table .tbody .tr0010 #line010,
-.container .sidebar .selector .table .tbody .tr0011 #line011,
-.container .sidebar .selector .table .tbody .tr0012 #line012,
+.container .sidebar .selector .table .tbody .tr0010 #line0010,
+.container .sidebar .selector .table .tbody .tr0011 #line0011,
+.container .sidebar .selector .table .tbody .tr0012 #line0012,
 .container .sidebar .selector .table .tbody .tr0001 #line0001 {
     display: flex;
     justify-content: center;
@@ -316,9 +316,9 @@ flex-direction: column;
 .container .sidebar .selector .table .tbody .tr007 #line007:active,
 .container .sidebar .selector .table .tbody .tr008 #line008:active,
 .container .sidebar .selector .table .tbody .tr009 #line009:active,
-.container .sidebar .selector .table .tbody .tr0010 #line010:active,
-.container .sidebar .selector .table .tbody .tr0011 #line011:active,
-.container .sidebar .selector .table .tbody .tr0012 #line012:active,
+.container .sidebar .selector .table .tbody .tr0010 #line0010:active,
+.container .sidebar .selector .table .tbody .tr0011 #line0011:active,
+.container .sidebar .selector .table .tbody .tr0012 #line0012:active,
 .container .sidebar .selector .table .tbody .tr0001 #line0001:active {
     transform: scale(.8);
 }
