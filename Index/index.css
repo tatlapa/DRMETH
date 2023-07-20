@@ -1,0 +1,524 @@
+/*Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+body  {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+}
+
+.meth {
+    display:flex;
+    flex-direction: column;
+}
+
+.money{
+    display:flex;
+    flex-direction: column;
+}
+
+
+#info1 {
+    margin: 0;
+    font-size : 30px;
+    color: white;
+}
+#info01 {
+    margin: 0;
+    font-size : 15px;
+    color: white;
+}
+
+#info2 {
+    margin: 0;
+    font-size : 30px;
+    color: white;
+}
+
+#info02 {
+    margin: 0;
+    font-size : 15px;
+    color: white;
+}
+
+
+#info3 {
+    font-size : 30px;
+    color: white;
+}
+
+.container {
+    height: 100%;
+    display:flex;
+    gap: 2rem;
+    background-color: azure;
+}
+
+.container .sidebar {
+    background-color: rgb(57, 114, 124) ;
+    width: 40%;
+    padding: 20px 10px;
+}
+
+.container .content {
+    background-color: rgb(0, 92, 128);
+    width: 60%;
+    padding: 20px 10px;
+}
+
+.container .sidebar .controller1 {
+
+    height : 100%;
+}
+
+.container .sidebar .controller1 .circles  {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 50%;
+    
+}
+
+.container .sidebar .controller1 .circles .circle {
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    border:3px solid black;
+    cursor: pointer;
+}
+
+.container .sidebar .controller1 .circles .circle:active {
+    transform: scale(.8);
+}
+
+.container .sidebar .controller1 .circles .rectangle1 {
+    display: flex;
+    align-items: center;
+}
+
+.container .sidebar .controller1 .circles .rectangle2 {
+    display: flex;
+    align-items: center;
+}
+
+.container .sidebar .controller1 .circles .rectangle3 {
+    display: flex;
+}
+
+.container .sidebar .controller1 .circles .rectangle1 .circle.meth {
+    background-color: yellow;
+}
+
+
+.container .sidebar .controller1 .circles .rectangle2 .circle.money {
+    background-color: green;
+}
+
+.container .sidebar .controller1 .circles .rectangle3 .circle.purity { 
+    background-color: white;
+    height: 100px;
+    width: 100px;  
+    margin-left: 10px;
+    cursor: inherit;
+}
+
+.container .sidebar .controller1 .circles .circle.purity:active {
+    transform: scale(1);
+}
+
+.container .sidebar .controller1 .selector {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    height: 50%;
+  
+}
+
+.container .sidebar .controller1 .selector .table {
+display: flex;
+flex-direction: column;
+}
+
+.container .sidebar .controller1 .selector .table .thead {
+    display: flex;
+    flex-direction:column;
+}
+
+.container .sidebar .controller1 .selector .table .thead .tr {
+    display: flex;
+    flex-direction:row;
+    
+}
+
+.container .sidebar .controller1 .selector .table .thead .tr #col1 {
+    padding: 6px 24px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 18%;
+    background-color: blue;
+}
+
+.container .sidebar .controller1 .selector .table .thead .tr #col2,
+.container .sidebar .controller1 .selector .table .thead .tr #col3,
+.container .sidebar .controller1 .selector .table .thead .tr #col4 {
+    padding: 6px 24px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 18%;
+
+}
+
+.container .sidebar .controller1 .selector .table .thead .tr #col1:active,
+.container .sidebar .controller1 .selector .table .thead .tr #col2:active,
+.container .sidebar .controller1 .selector .table .thead .tr #col3:active,
+.container .sidebar .controller1 .selector .table .thead .tr #col4:active {
+    transform: scale(.8);
+}
+
+.container .sidebar .selector .table .tbody {
+    display: flex;
+    flex-direction:column;
+}
+
+.container .sidebar .controller1 .selector .table .tbody .tr1,
+.container .sidebar .controller1 .selector .table .tbody .tr2,
+.container .sidebar .controller1 .selector .table .tbody .tr3,
+.container .sidebar .controller1 .selector .table .tbody .tr4,
+.container .sidebar .controller1 .selector .table .tbody .tr5,  
+.container .sidebar .controller1 .selector .table .tbody .tr6,  
+.container .sidebar .controller1 .selector .table .tbody .tr7,  
+.container .sidebar .controller1 .selector .table .tbody .tr8, 
+.container .sidebar .controller1 .selector .table .tbody .tr9,  
+.container .sidebar .controller1 .selector .table .tbody .tr10, 
+.container .sidebar .controller1 .selector .table .tbody .tr11,
+.container .sidebar .controller1 .selector .table .tbody .tr12,
+.container .sidebar .controller1 .selector .table .tbody .tr01,
+.container .sidebar .controller1 .selector .table .tbody .tr02,
+.container .sidebar .controller1 .selector .table .tbody .tr03,
+.container .sidebar .controller1 .selector .table .tbody .tr04,
+.container .sidebar .controller1 .selector .table .tbody .tr05,
+.container .sidebar .controller1 .selector .table .tbody .tr06,
+.container .sidebar .controller1 .selector .table .tbody .tr07,
+.container .sidebar .controller1 .selector .table .tbody .tr08,
+.container .sidebar .controller1 .selector .table .tbody .tr09,
+.container .sidebar .controller1 .selector .table .tbody .tr010,
+.container .sidebar .controller1 .selector .table .tbody .tr011,
+.container .sidebar .controller1 .selector .table .tbody .tr012,
+.container .sidebar .controller1 .selector .table .tbody .tr001,
+.container .sidebar .controller1 .selector .table .tbody .tr002,
+.container .sidebar .controller1 .selector .table .tbody .tr003,
+.container .sidebar .controller1 .selector .table .tbody .tr004,
+.container .sidebar .controller1 .selector .table .tbody .tr005,
+.container .sidebar .controller1 .selector .table .tbody .tr006,
+.container .sidebar .controller1 .selector .table .tbody .tr007,
+.container .sidebar .controller1 .selector .table .tbody .tr008,
+.container .sidebar .controller1 .selector .table .tbody .tr009,
+.container .sidebar .controller1 .selector .table .tbody .tr0010,
+.container .sidebar .controller1 .selector .table .tbody .tr0011,
+.container .sidebar .controller1 .selector .table .tbody .tr0012,
+.container .sidebar .controller1 .selector .table .tbody .tr0001,
+.container .sidebar .controller1 .selector .table .tbody .tr0002,
+.container .sidebar .controller1 .selector .table .tbody .tr0003,
+.container .sidebar .controller1 .selector .table .tbody .tr0004,
+.container .sidebar .controller1 .selector .table .tbody .tr0005,
+.container .sidebar .controller1 .selector .table .tbody .tr0006,
+.container .sidebar .controller1 .selector .table .tbody .tr0007,
+.container .sidebar .controller1 .selector .table .tbody .tr0008,
+.container .sidebar .controller1 .selector .table .tbody .tr0009,
+.container .sidebar .controller1 .selector .table .tbody .tr00010,
+.container .sidebar .controller1 .selector .table .tbody .tr00011,
+.container .sidebar .controller1 .selector .table .tbody .tr00012 {
+    display: flex;  
+}
+
+.container .sidebar .controller1 .selector .table .tbody .tr1 #trailer,
+.container .sidebar .controller1 .selector .table .tbody .tr2 #line2,
+.container .sidebar .controller1 .selector .table .tbody .tr3 #line3,
+.container .sidebar .controller1 .selector .table .tbody .tr4 #line4,
+.container .sidebar .controller1 .selector .table .tbody .tr5 #line5,  
+.container .sidebar .controller1 .selector .table .tbody .tr6 #line6,  
+.container .sidebar .controller1 .selector .table .tbody .tr7 #line7,  
+.container .sidebar .controller1 .selector .table .tbody .tr8 #line8, 
+.container .sidebar .controller1 .selector .table .tbody .tr9 #line9,  
+.container .sidebar .controller1 .selector .table .tbody .tr10 #line10, 
+.container .sidebar .controller1 .selector .table .tbody .tr11 #line11,
+.container .sidebar .controller1 .selector .table .tbody .tr12 #line12,
+.container .sidebar .controller1 .selector .table .tbody .tr01 #line01,
+.container .sidebar .controller1 .selector .table .tbody .tr02 #line02,
+.container .sidebar .controller1 .selector .table .tbody .tr03 #line03,
+.container .sidebar .controller1 .selector .table .tbody .tr04 #line04,
+.container .sidebar .controller1 .selector .table .tbody .tr05 #line05,
+.container .sidebar .controller1 .selector .table .tbody .tr06 #line06,
+.container .sidebar .controller1 .selector .table .tbody .tr07 #line07,
+.container .sidebar .controller1 .selector .table .tbody .tr08 #line08,
+.container .sidebar .controller1 .selector .table .tbody .tr09 #line09,
+.container .sidebar .controller1 .selector .table .tbody .tr010 #line010,
+.container .sidebar .controller1 .selector .table .tbody .tr011 #line011,
+.container .sidebar .controller1 .selector .table .tbody .tr012 #line012,
+.container .sidebar .controller1 .selector .table .tbody .tr001 #line001,
+.container .sidebar .controller1 .selector .table .tbody .tr002 #line002,
+.container .sidebar .controller1 .selector .table .tbody .tr003 #line003,
+.container .sidebar .controller1 .selector .table .tbody .tr004 #line004,
+.container .sidebar .controller1 .selector .table .tbody .tr005 #line005,
+.container .sidebar .controller1 .selector .table .tbody .tr006 #line006,
+.container .sidebar .controller1 .selector .table .tbody .tr007 #line007,
+.container .sidebar .controller1 .selector .table .tbody .tr008 #line008,
+.container .sidebar .controller1 .selector .table .tbody .tr009 #line009,
+.container .sidebar .controller1 .selector .table .tbody .tr0010 #line0010,
+.container .sidebar .controller1 .selector .table .tbody .tr0011 #line0011,
+.container .sidebar .controller1 .selector .table .tbody .tr0012 #line0012,
+.container .sidebar .controller1 .selector .table .tbody .tr0001 #line0001,
+.container .sidebar .controller1 .selector .table .tbody .tr0002 #line0002,
+.container .sidebar .controller1 .selector .table .tbody .tr0003 #line0003,
+.container .sidebar .controller1 .selector .table .tbody .tr0004 #line0004,
+.container .sidebar .controller1 .selector .table .tbody .tr0005 #line0005,
+.container .sidebar .controller1 .selector .table .tbody .tr0006 #line0006,
+.container .sidebar .controller1 .selector .table .tbody .tr0007 #line0007,
+.container .sidebar .controller1 .selector .table .tbody .tr0008 #line0008,
+.container .sidebar .controller1 .selector .table .tbody .tr0009 #line0009,
+.container .sidebar .controller1 .selector .table .tbody .tr00010 #line00010,
+.container .sidebar .controller1 .selector .table .tbody .tr00011 #line00011,
+.container .sidebar .controller1 .selector .table .tbody .tr00012 #line00012  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 18%;
+}
+
+.container .sidebar .controller1 .selector .table .tbody .tr1 #trailer:active, 
+.container .sidebar .controller1 .selector .table .tbody .tr2 #line2:active,
+.container .sidebar .controller1 .selector .table .tbody .tr3 #line3:active,
+.container .sidebar .controller1 .selector .table .tbody .tr4 #line4:active,
+.container .sidebar .controller1 .selector .table .tbody .tr5 #line5:active,
+.container .sidebar .controller1 .selector .table .tbody .tr6 #line6:active,
+.container .sidebar .controller1 .selector .table .tbody .tr7 #line7:active,
+.container .sidebar .controller1 .selector .table .tbody .tr8 #line8:active,
+.container .sidebar .controller1 .selector .table .tbody .tr9 #line9:active,
+.container .sidebar .controller1 .selector .table .tbody .tr10 #line10:active,
+.container .sidebar .controller1 .selector .table .tbody .tr11 #line11:active,
+.container .sidebar .controller1 .selector .table .tbody .tr12 #line12:active,
+.container .sidebar .controller1 .selector .table .tbody .tr01 #line01:active,
+.container .sidebar .controller1 .selector .table .tbody .tr02 #line02:active,
+.container .sidebar .controller1 .selector .table .tbody .tr03 #line03:active,
+.container .sidebar .controller1 .selector .table .tbody .tr04 #line04:active,
+.container .sidebar .controller1 .selector .table .tbody .tr05 #line05:active,
+.container .sidebar .controller1 .selector .table .tbody .tr001 #line001:active,
+.container .sidebar .controller1 .selector .table .tbody .tr002 #line002:active,
+.container .sidebar .controller1 .selector .table .tbody .tr003 #line003:active,
+.container .sidebar .controller1 .selector .table .tbody .tr004 #line004:active,
+.container .sidebar .controller1 .selector .table .tbody .tr005 #line005:active,
+.container .sidebar .controller1 .selector .table .tbody .tr006 #line006:active,
+.container .sidebar .controller1 .selector .table .tbody .tr007 #line007:active,
+.container .sidebar .controller1 .selector .table .tbody .tr008 #line008:active,
+.container .sidebar .controller1 .selector .table .tbody .tr009 #line009:active,
+.container .sidebar .controller1 .selector .table .tbody .tr0010 #line0010:active,
+.container .sidebar .controller1 .selector .table .tbody .tr0011 #line0011:active,
+.container .sidebar .controller1 .selector .table .tbody .tr0012 #line0012:active,
+.container .sidebar .controller1 .selector .table .tbody .tr0001 #line0001:active {
+    transform: scale(.8);
+}
+
+.container .sidebar .controller1 .selector .table .tbody .tr1 #content1, 
+.container .sidebar .controller1 .selector .table .tbody .tr2 #content2,
+.container .sidebar .controller1 .selector .table .tbody .tr3 #content3,
+.container .sidebar .controller1 .selector .table .tbody .tr4 #content4,
+.container .sidebar .controller1 .selector .table .tbody .tr5 #content5,
+.container .sidebar .controller1 .selector .table .tbody .tr6 #content6,
+.container .sidebar .controller1 .selector .table .tbody .tr7 #content7,
+.container .sidebar .controller1 .selector .table .tbody .tr8 #content8,
+.container .sidebar .controller1 .selector .table .tbody .tr9 #content9,
+.container .sidebar .controller1 .selector .table .tbody .tr10 #content10,
+.container .sidebar .controller1 .selector .table .tbody .tr11 #content11,
+.container .sidebar .controller1 .selector .table .tbody .tr12 #content12,
+.container .sidebar .controller1 .selector .table .tbody .tr01 #content01,
+.container .sidebar .controller1 .selector .table .tbody .tr02 #content02,
+.container .sidebar .controller1 .selector .table .tbody .tr03 #content03,
+.container .sidebar .controller1 .selector .table .tbody .tr04 #content04,
+.container .sidebar .controller1 .selector .table .tbody .tr05 #content05,
+.container .sidebar .controller1 .selector .table .tbody .tr06 #content06,
+.container .sidebar .controller1 .selector .table .tbody .tr07 #content07,
+.container .sidebar .controller1 .selector .table .tbody .tr08 #content08,
+.container .sidebar .controller1 .selector .table .tbody .tr09 #content09,
+.container .sidebar .controller1 .selector .table .tbody .tr010 #content010,
+.container .sidebar .controller1 .selector .table .tbody .tr011 #content011,
+.container .sidebar .controller1 .selector .table .tbody .tr012 #content012,
+.container .sidebar .controller1 .selector .table .tbody .tr001 #content001,
+.container .sidebar .controller1 .selector .table .tbody .tr002 #content002,
+.container .sidebar .controller1 .selector .table .tbody .tr003 #content003,
+.container .sidebar .controller1 .selector .table .tbody .tr004 #content004,
+.container .sidebar .controller1 .selector .table .tbody .tr005 #content005,
+.container .sidebar .controller1 .selector .table .tbody .tr006 #content006,
+.container .sidebar .controller1 .selector .table .tbody .tr007 #content007,
+.container .sidebar .controller1 .selector .table .tbody .tr008 #content008,
+.container .sidebar .controller1 .selector .table .tbody .tr009 #content009,
+.container .sidebar .controller1 .selector .table .tbody .tr0010 #content0010,
+.container .sidebar .controller1 .selector .table .tbody .tr0011 #content0011,
+.container .sidebar .controller1 .selector .table .tbody .tr0012 #content0012,
+.container .sidebar .controller1 .selector .table .tbody .tr0001 #content0001,
+.container .sidebar .controller1 .selector .table .tbody .tr0002 #content0002,
+.container .sidebar .controller1 .selector .table .tbody .tr0003 #content0003,
+.container .sidebar .controller1 .selector .table .tbody .tr0004 #content0004,
+.container .sidebar .controller1 .selector .table .tbody .tr0005 #content0005,
+.container .sidebar .controller1 .selector .table .tbody .tr0006 #content0006,
+.container .sidebar .controller1 .selector .table .tbody .tr0007 #content0007,
+.container .sidebar .controller1 .selector .table .tbody .tr0008 #content0008,
+.container .sidebar .controller1 .selector .table .tbody .tr0009 #content0009,
+.container .sidebar .controller1 .selector .table .tbody .tr00010 #content00010,
+.container .sidebar .controller1 .selector .table .tbody .tr00011 #content00011,
+.container .sidebar .controller1 .selector .table .tbody .tr00012 #content00012 {
+    padding: 6px 24px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    width: 67%;
+}
+
+.container .content .controller2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height : 100%;
+}
+
+.container .content .controller2 .rectangle01 {
+    display: inline-block;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    height : 20%;
+}
+
+.container .content .controller2 .rectangle02 {
+    display: none;
+    justify-content: space-around;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    height : 20%;
+}
+
+.container .content .controller2 .rectangle03,
+.container .content .controller2 .rectangle04,
+.container .content .controller2 .rectangle05 {
+    display: none;
+    padding: 6px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    height : 20%;
+}
+
+
+.container .content .controller2 .rectangle01 .buttondealer {
+    margin-top: auto;
+    padding: 6px 24px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .container .content .controller2 .rectangle01 .buttondealer:active {
+    transform: scale(.8);
+}
+
+  .container .content .controller2 .rectangle02 .buy1 {
+    width: 20%;
+    height: 20%;
+  }
+
+  .container .content .controller2 .rectangle02 .buy2 {
+    width: 20%;
+    height: 20%;
+  }
+
+  .container .content .controller2 .rectangle02 .buy1 .buttonchemist1 {
+    margin-top: auto;
+    padding: 6px 24px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .container .content .controller2 .rectangle02 .buy1 .buttonchemist1:active {
+    transform: scale(.8);
+}
+
+
+  .container .content .controller2 .rectangle02 .buy2 .buttonSellTrailer {
+    margin-top: auto;
+    padding: 6px 24px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .container .content .controller2 .rectangle02 .buy2 .buttonSellTrailer:active {
+    transform: scale(.8);
+  }
